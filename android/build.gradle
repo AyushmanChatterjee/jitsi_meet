@@ -16,10 +16,10 @@ buildscript {
 
 rootProject.allprojects {
     repositories {
-        maven {
-            url "file:C:\\Users\\ayush\\Code\\Android\\jitsi-meet-prod-android-sdk-build"
-            //url "https://github.com/jitsi/jitsi-maven-repository/raw/master/releases"
-        }
+        maven { url "file:C:\\Users\\ayush\\Code\\Android\\prod-android-sdk-build" }
+        // maven {
+        //    url "https://github.com/jitsi/jitsi-maven-repository/raw/master/releases"
+        // }
         google()
         jcenter()
     }
@@ -52,4 +52,5 @@ dependencies {
 
     // Jitsi Meet from https://github.com/jitsi/jitsi-maven-repository/tree/master/releases/org/jitsi/react/jitsi-meet-sdk
     implementation ('org.jitsi.react:jitsi-meet-sdk:+') { transitive = true }
+    // implementation ('org.jitsi.react:jitsi-meet-sdk:2.5.1') { transitive = true }
 }
